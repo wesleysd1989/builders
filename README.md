@@ -18,9 +18,9 @@ Este desafio técnico foi criado usando [ReactJs](https://github.com/facebook/re
 
 ## Rodando os testes do projeto 🧪
 
-No projeto estamos usando testes unitários que se encontram dentro do diretorio ```__tests__/``` nas pastas.
+No projeto estamos usando testes unitários que se encontram dentro do diretorio ```__tests__/``` nas pastas.
 Os testes do aplicativo são embasados nos frameworks [Jest](https://jestjs.io).
-Consideramos um arquivo de teste quando o mesmo tem a extensão ```.test.js```
+Consideramos um arquivo de teste quando o mesmo tem a extensão ```.test.js```
 
 ### Testes Unitários
 
