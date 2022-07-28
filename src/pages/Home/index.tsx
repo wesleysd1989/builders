@@ -23,7 +23,7 @@ const Home: React.FC = () => {
   const getWeather = useCallback(async () => {
     if (latitude && longitude) {
       const weather: any = await api.get(
-        `weather?lat=${latitude}&lon=${longitude}&appid=6a47f9e1bd6274d845a9ed0d7722e292&units=metric`
+        `weather?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_WEATHER_MAP}&units=metric`
       );
       setToday({
         city: weather.data.name,
@@ -31,7 +31,7 @@ const Home: React.FC = () => {
         icon: weather.data.weather[0].icon,
       });
       const forecast: any = await api.get(
-        `forecast?lat=${latitude}&lon=${longitude}&appid=6a47f9e1bd6274d845a9ed0d7722e292&units=metric`
+        `forecast?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_WEATHER_MAP}&units=metric`
       );
       setNextDays(formartWeather(forecast.data.list, forecast.data.city.name));
     }
