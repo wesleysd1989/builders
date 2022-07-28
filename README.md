@@ -13,7 +13,7 @@ Este desafio técnico foi criado usando [ReactJs](https://github.com/facebook/re
 
 1. Antes de começar, tenha certeza que seu ambiente está pronto para o desenvolvimento React, de acordo com as instruções oficiais descritas aqui [https://pt-br.reactjs.org/docs/getting-started.html](https://pt-br.reactjs.org/docs/getting-started.html).
 2. Clone esse repositório usando o comando ``` git clone < project-url.git > ```.
-3. Copie o arquivo .env.example para .env e preencha as informações.
+3. Copie o arquivo ``` .env.example```  para ``` .env```  e preencha as informações.
 4. Instale as dependências do projeto usando ``` yarn ```.
 5. Use o comando ``` yarn start ``` para iniciar um servidor local.
 
