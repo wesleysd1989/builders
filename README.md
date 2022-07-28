@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+Desafio Técnico web da Builders :rocket:
+===
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este desafio técnico foi criado usando [ReactJs](https://github.com/facebook/react/) e seus testes foram escritos usando [Jest](https://jestjs.io).
 
-## Available Scripts
+## demo
 
-In the project directory, you can run:
+[site](https://builders-wesleysd1989.vercel.app/)
 
-### `npm start`
+![desktop-version](src/assets/desktop.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Como começar a desenvolver e testar este projeto :clipboard:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Antes de começar, tenha certeza que seu ambiente está pronto para o desenvolvimento React, de acordo com as instruções oficiais descritas aqui [https://pt-br.reactjs.org/docs/getting-started.html](https://pt-br.reactjs.org/docs/getting-started.html).
+2. Clone esse repositório usando o comando ``` git clone < project-url.git > ```.
+3. Instale as dependências do projeto usando ``` yarn ```.
+4. Use o comando ``` yarn start ``` para iniciar um servidor local.
 
-### `npm test`
+## Rodando os testes do projeto 🧪
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+No projeto estamos usando testes unitários que se encontram dentro do diretorio ```__tests__/``` nas pastas.
+Os testes do aplicativo são embasados nos frameworks [Jest](https://jestjs.io).
+Consideramos um arquivo de teste quando o mesmo tem a extensão ```.test.js```
 
-### `npm run build`
+### Testes Unitários
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para os testes unitarios utilizamos o [Jest](https://jestjs.io) e com ele identificamos problemas em implementações de classes e funções, e possíveis *breaking changes*.
+Você pode executar os testes do projeto com o comando ``` yarn run test ```.
+A estrutura de pastas dos testes são um espelho da estrutura do diretorio ```src/```, mas se encontram dentro da pasta ```__tests__``` como mencionado acima.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Boas práticas :thumbsup:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### GIT
 
-### `npm run eject`
+#### Nomeando as branches
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+As branches de desenvolvimento devem ser criadas a partir da branch dev, fazendo o checkout com o comando`git checkout dev`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Caso a branch seja de uma nova feature, crie com o nome `feature/branch-name` com o comando `git checkout -b feature/branch-name`.
+2. Caso a branch seja de uma correção, crie com o nome `fix/branch-name` com o comando `git checkout -b fix/branch-name`.
+3. Caso a branch seja de uma release, crie com o nome `release/branch-name` com o comando `git checkout -b release/branch-name`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+> Lembre-se de criar o nome das branches em inglês, usando o padrão do ES6, com o nome em minúsculas e separados por hífen.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Padrão de commits
 
-## Learn More
+Os commits no Git podem ser feito em português e descrevendo bem o que as ações presentes nesse commit. Lembre-se de fazer commits ao menos uma vez ao dia. Você também pode fazer vários commits para separar bem o que está entrando no repositório. Imaginando um commit de correção do texto de um botão, você poderia usar o comando `git commit -m "Corrigindo retorno login"` e o comando `git push` para enviar o código e o commit para o repositório.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Você também pode fazer commits com código 'quebrado' no repositório, lembrando de adicionar as iniciais de `Work In Progress` no início da mensagem do commit, por exemplo: `git commit -m "[WIP] Corrigindo retorno login"`.
