@@ -2,6 +2,7 @@ Desafio Técnico web da Builders :rocket:
 ===
 
 Este desafio técnico foi criado usando [ReactJs](https://github.com/facebook/react/) e seus testes foram escritos usando [Jest](https://jestjs.io).
+API utilizada e a da [openweathermap](https://openweathermap.org/api).
 
 ## demo
 
