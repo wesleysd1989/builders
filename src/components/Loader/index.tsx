@@ -5,7 +5,7 @@ import { LoaderWrapper } from "./styles";
 
 const Loader: React.FC = () => {
   return (
-    <LoaderWrapper>
+    <LoaderWrapper data-testid="loading">
       <Spinner animation="border" role="status" variant="light" />
     </LoaderWrapper>
   );
